@@ -53,7 +53,7 @@ function exemploFloat() {
     alert("M² do terreno: " + metroQuadrado);
 }
 
-function exemploBoolean(){
+function exemploBoolean() {
     // Quando entra na empresa
     let tenhoFeriasVencidas = false;
 
@@ -61,4 +61,44 @@ function exemploBoolean(){
     tenhoFeriasVencidas = true;
 
     alert("Férias Vencidas?" + tenhoFeriasVencidas)
+}
+
+function calcularSalario() {
+    let colaborador = "Judity Silva";
+    let email = "judity.gamer@gg.com"
+    let valorHora = 150.60; // por hora de streeming
+    let horasPorMes = 50;
+    let beneficiosDonate = 3500.98;
+
+    // Calcular o sálario bruto
+    let salarioBruto = valorHora * horasPorMes;
+
+    // Calcular o salário liquido
+    let salarioLiquido = salarioBruto + beneficiosDonate;
+
+    alert(
+        "Colaborador: " + colaborador +
+        "\nEmail: " + email +
+        "\nValor por Horas: R$" + valorHora.toFixed(2) +
+        "\nHoras por Mês: " + horasPorMes +
+        "\nSalário bruto: R$" + salarioBruto.toFixed(2) +
+        "\nBeneficio Donate: R$" + beneficiosDonate.toFixed(2) +
+        "Salario liquido: R$" + salarioLiquido.toFixed(2)
+    )
+}
+
+// <button type="button" onclick="calcularTempoMes()">Calcular Segundos</button>
+function calcularTempoMes() {
+    let segundosPorMinuto = 60;
+    let minutosPorHora = 60;
+    let horasPorDia = 24;
+
+    let segundosPorDia = segundosPorMinuto * minutosPorHora * horasPorDia;
+
+    alert(
+        "Segundos por minuto: " + segundosPorMinuto +
+        "\nMinutos por hora: " + minutosPorHora +
+        "\nHoras por dia: " + horasPorDia +
+        "\nSegundos por dia: " + segundosPorDia
+    );
 }
